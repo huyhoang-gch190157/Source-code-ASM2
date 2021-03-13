@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>management</title>
 </head>
-<body style="margin: auto;">
-    <h1>Warehouse management</h1>
-    <a href="/new">New Product</a>
-    <form action="/search" method="post" style="margin: auto;">
-        Prodcut's name to search <input type="text" name="txtSearch">
+<body>
+    <h1 style="text-align: center;" >Warehouse management</h1>
+    <a href="/new" style="text-align: center;">New Product</a>
+    <form action="/search" method="post" style="text-align: center;">
+        Prodcut's name to search <input type="text" name="txtSearch" minlength="3">
         <input type="submit" value="Search">
     </form><br>
-    <table border="1" >
+    <table border="1" style="margin: auto;" >
         <tr>
             <td>ID</td>
             <td>Name</td>
