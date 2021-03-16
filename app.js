@@ -49,7 +49,7 @@ app.post('/insert', async( req,res)=>{
     let quantityInput = req.body.quantity;
     let colorInput = req.body.color;
     let newProduct={_id:IDInput, productName:nameInput, price:priceInput, quantity: quantityInput, color: colorInput};
-    if(IDInput == '' || nameInput  == '' || priceInput  == ''|| quantityInput == '' || colorInput == '' ){
+    if(quantityInput < 0 || quantityInput >10 ){
 
         res.render('error')
         
