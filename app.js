@@ -17,7 +17,7 @@ var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }))
 
 //xóa sp
-app.get('/delete', async (req,res)=>{
+app.get('/delete', async (req,res)=>{git add .
     let id =req.query.pid;
     let condition = {"_id":id};
 
